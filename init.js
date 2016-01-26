@@ -24,7 +24,7 @@
             amplify.subscribe('context-menu.onShow', function(obj){
                 if (/\.js$/.test(obj.path)) {
                     $('#context-menu').append('<hr class="file-only runjs">');
-                    $('#context-menu').append('<a class="file-only runjs" onclick="codiad.Runjs.contextMenu($(\'#context-menu\').attr(\'data-path\'));"><span class="icon-brush"></span>RunJS</a>');
+                    $('#context-menu').append('<a class="file-only runjs" onclick="codiad.Runjs.contextMenu($(\'#context-menu\').attr(\'data-path\'));"><span class="icon-play"></span>RunJS</a>');
                 }
             });
             amplify.subscribe('context-menu.onHide', function(){
